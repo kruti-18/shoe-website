@@ -3,30 +3,33 @@
     height: 100vh;
     margin: 0 auto;
     background-color: yellow;
+    
 }
 
 .container{
     padding: 7rem;
     display: flex;
-    flex: 3;
+    
     justify-content: center;
     align-items: center;
+    
     /* flex-wrap: wrap; */
 
 }
 
 .product-img{
-    
+    width: 23rem;
     height: 25rem;
     background-color: aquamarine;
-    flex: 1.25;
+    
 }
 
 .product-about{
+    width: 35rem;
     padding: 2rem 4rem;
     display: flex;
     flex-direction:column;
-    flex: 1.75;
+    
     /* width: 600px; */
 }
 
@@ -53,4 +56,77 @@
 
 .buying-option select{
     margin-right: 0.8rem;
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 5rem;
+    }
+
+    .product-img{
+    width: 23rem;
+    height: 24rem;
+    background-color: aquamarine;
+    
+    }
+
+    @media screen and (max-width: 768px){
+        .container{
+            max-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            overflow: scroll;
+        }
+
+        .product-img{
+            width: 20rem;
+            height: 20rem;
+            background-color: aquamarine;
+            
+        }
+        .product-about{
+            width: 35rem;
+            padding: 2rem 4rem;
+            display: flex;
+            flex-direction:column;
+            
+            /* width: 600px; */
+        }
+        
+        .product-about .company-name{
+            font-weight: bolder;
+            font-size: 1rem;
+            line-height: 2rem;
+
+        }
+        
+        .product-about .title{
+            font-weight: 500;
+            font-size:large;
+            line-height: 3rem;
+        }
+        
+        .description{
+            /* margin-bottom: 1.2rem; */
+            font-size: small;
+        }
+        
+        .price{
+            font-size: 1rem;
+            font-weight: bold;
+            /* margin-bottom: 1rem; */
+        }
+        
+        .buying-option select{
+            margin-right: 0.8rem;
+        }
+        
+    }
+
+
 }
