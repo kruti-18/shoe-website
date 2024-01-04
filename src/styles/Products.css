@@ -1,0 +1,43 @@
+.card-main{
+    width: 100%;
+    height: 100vh;
+    background-color: #EEF0F2;
+    overflow: scroll;
+    margin-bottom: 2em;;
+}
+
+.card-area{
+    /* width: 100%; */
+    padding: 3rem;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-around;
+    row-gap: 2em;
+    column-gap: 2em;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .card-area {
+      grid-template-columns: repeat(2, auto); /* Adjust the number of columns for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card-area {
+      grid-template-columns: 1fr; /* Single column layout for screens less than or equal to 600px */
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .card-area {
+        grid-template-columns: 1fr;
+        /* justify-content: center;
+        align-items: center; /* Center the items vertically */
+        width: 100%;
+        margin: 0 auto; 
+      }
+  }
+
+

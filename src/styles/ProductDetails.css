@@ -1,0 +1,56 @@
+.product-page{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: yellow;
+}
+
+.container{
+    padding: 7rem;
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+}
+
+.product-img{
+    
+    height: 25rem;
+    background-color: aquamarine;
+    flex: 1.25;
+}
+
+.product-about{
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction:column;
+    flex: 1.75;
+    /* width: 600px; */
+}
+
+.product-about .company-name{
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.product-about .title{
+    font-weight: 500;
+    font-size: x-large;
+    line-height: 4rem;
+}
+
+.description{
+    margin-bottom: 1.7rem;
+}
+
+.price{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.buying-option select{
+    margin-right: 0.8rem;
+}

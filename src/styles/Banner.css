@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #1C1C1C;
+    color: #ECEBE4;
+    margin-top: 0;
+    font-family: 'Comfortaa', sans-serif;
+}
+.main-body{
+    width: 80%;
+    min-height: 100vh;
+    margin: 0rem auto;
+    /* padding-top: 2.rem; */
+    /* height: fit-content; */
+    /* background-color: #1C1C1C; */
+    /* background-color: azure; */
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-body .left,
+.main-body .right{
+    max-height: 100vh;
+    /* flex: 1;  */
+    width: 900px;
+}
+.main-body .right{
+    margin-left: 2rem;
+    /* background-color: beige; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .main-body .left{
+    /* margin-right: 2rem; */
+    /* background-color: aqua; */
+
+
+.left h1{
+    font-size: 105px;
+    line-height: 6rem;
+   
+}
+
+.left .para{
+    width: 404px;
+    font-size: 16px;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    word-spacing: 2px;
+    letter-spacing: 0.8px;
+}
+
+.left .buttons{
+    margin-top: 1.5rem;
+    display: flex;
+    /* padding: 2rem 3rem; */
+    margin-left: 0  ;
+
+}
+
+.buttons .primary button,
+.buttons, .secondary button{
+    padding: 0.6rem 0.6rem ;
+    margin-right: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Comfortaa', sans-serif;
+   
+}
+
+.buttons .primary button{
+    border-radius: 12px;
+    border: 0;
+}
+
+.buttons .secondary button{
+    border: 1px solid #ECEBE4;
+    border-radius: 0;
+    background-color: transparent;
+    color: #ECEBE4;
+}
+
+.main-body .right img{
+        width: 530px;
+        height: 530px;
+        padding: 1rem;
+}

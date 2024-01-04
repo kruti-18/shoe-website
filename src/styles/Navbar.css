@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+.nav{
+    font-family: 'Comfortaa', sans-serif;
+    width: 100%;
+    height: 72px;
+    background-color: #1C1C1C;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left{
+    width: auto;
+}
+.left img{
+    width: 55px;
+    height: 55px;
+    max-height: 100%;
+}
+
+.menu-mobile{
+    display: none;
+    /* background-color: white; */
+  
+}
+.nav-menu{
+    width: 100%;
+}
+
+
+.nav-items {
+    
+    list-style: none;
+    text-transform: uppercase;
+    color: #DADDD8;
+    display: flex;
+    gap: 2rem;
+    font-size: 0.8rem;
+
+}
+
+.right{
+    display: flex;
+    gap: 2rem;
+}
+
+.right button{
+    font-size: 0.8rem;
+    padding: 0.5rem 1.3rem;
+    border-radius: 3px;
+    border: 1px solid black;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 850px){
+.nav{
+    z-index: 99;
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 0 3rem;
+
+}
+.left img{
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    /* max-height: 100%; */
+}
+
+
+
+    .center{
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .nav-menu, .nav-items{
+        
+        background-color: red;
+        display: flex;
+        /* gap: 0; */
+        flex-direction: column;
+        list-style: none;
+        justify-content: stretch;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        padding: 80px 0 30px 0;
+        margin: 0;
+        overflow: auto;
+        z-index: -1;
+
+    }
+
+    .nav-menu .active, .nav-items .active{
+        z-index: -1;
+        opacity: 1;
+    }
+
+    .nav-items li{
+        display: block;
+        /* width: 100%; */
+        margin: 0 auto;
+        font-size: 1.2rem;
+        padding: 2rem 0;
+    }
+
+    .menu-mobile {
+        display: block;
+        /* width: 100%; */
+        /* margin: 0 auto; */
+        color: wheat;
+        width: 3rem;
+        /* height: 3rem; */
+    }
+
+    .right{
+        display: none;
+    }
+}
