@@ -4,7 +4,7 @@
 .card{
     width: 19rem;
     height: 23rem;
-    background-color: #DADDD8;
+    background-color: white;
     border-radius: 25px;
     border: 1px solid #1C1C1C;
     display: flex;
@@ -24,16 +24,19 @@
 .card-title{
     font-size: 0.9rem;
     padding: 0.3rem 0;
+    color: #102C57;
 }
 
 .card-heading{
     font-size: 1rem;
     padding: 0.3rem 0;
     font-weight:bold ;
+    color: #102C57
 }
 
 .price{
     font-size: 0.87rem;
+    color: #102C57
 }
 
 

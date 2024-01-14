@@ -5,6 +5,7 @@ import Banner from './Banner'
 function Header() {
   return (
     <>
+   
     <Navbar/> 
     <Banner/>
       

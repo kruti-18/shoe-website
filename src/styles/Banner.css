@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 
@@ -11,7 +11,8 @@
 }
 .main{
     width: 100%;
-    /* height: 100vh; */
+    
+    
     background-color: #1C1C1C;
     color: #ECEBE4;
     margin-top: 0;
@@ -21,10 +22,7 @@
     width: 80%;
     min-height: 100vh;
     margin: 0rem auto;
-    /* padding-top: 2.rem; */
-    /* height: fit-content; */
-    /* background-color: #1C1C1C; */
-    /* background-color: azure; */
+    
     display: flex;
     flex: 1;
     justify-content: center;
@@ -34,19 +32,16 @@
 .main-body .left,
 .main-body .right{
     max-height: 100vh;
-    /* flex: 1;  */
+    
     width: 900px;
 }
 .main-body .right{
     margin-left: 2rem;
-    /* background-color: beige; */
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/* .main-body .left{
-    /* margin-right: 2rem; */
-    /* background-color: aqua; */
 
 
 .left h1{
@@ -68,7 +63,7 @@
 .left .buttons{
     margin-top: 1.5rem;
     display: flex;
-    /* padding: 2rem 3rem; */
+    
     margin-left: 0  ;
 
 }
@@ -99,4 +94,120 @@
         width: 530px;
         height: 530px;
         padding: 1rem;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+html {
+    box-sizing: border-box;
+    /* margin: 4rem; */
+    padding: 0;
+}
+
+
+
+body {
+   
+    color: #ECEBE4;
+    overflow: hidden;
+    /* margin-top: 3rem; */
+}
+
+.main {
+    width: 100%;
+    background-color: #DAC0A3;
+    color: #102C57;
+}
+
+.main-body {
+    
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-body .left,
+.main-body .right {
+    width: 100%;
+}
+
+.main-body .right {
+    margin-top: 2rem;
+}
+
+.left h1 {
+    font-size: 5vw;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.left .para {
+    width: 100%;
+    font-size: 1rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    word-spacing: 2px;
+    letter-spacing: 0.8px;
+}
+
+.left .buttons {
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+.buttons .primary button,
+.buttons .secondary button {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.buttons .primary button {
+    border-radius: 12px;
+    border: 0;
+}
+
+.buttons .secondary button {
+    border: 1px solid #102C57;
+    border-radius: 0;
+    background-color: transparent;
+    color: #102C57;
+    /* font-weight: 800; */
+}
+
+.main-body .right img {
+    width: 100%;
+    max-width: 530px;
+    height: auto;
+    padding: 1rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .text {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .main-body {
+        flex-direction: column-reverse;
+        overflow-y: scroll; /* Enable vertical scrolling for main body */
+        height: 100vh; /* Set the main body height to the viewport height */
+    }
+
+    .image img {
+        max-width: 100%; /* Make the image full width for smaller screens */
+    }
 }
